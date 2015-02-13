@@ -1,0 +1,29 @@
+<div id="menuWrapper">
+	<div class="menuRow">
+		<article>
+			<span style="color: #00f;"> Index </span>
+		</article>
+	</div>
+		<div ng-repeat = "section in sections" class="section{{section.id}} sec">
+			<div class="menuRow section" ng-click="clk(section.id, section.course)" >
+				<article>
+					<div class="arrow-right caret"> </div>
+
+					Section {{section.id}} - {{section.name}}
+				</article>
+
+			</div>
+
+			<div id="chapterWrapper" class="chap">
+
+				<div class="menuRow chapter{{section.id}} hide_help" ng-repeat="chapter in chapters" >
+					<article>
+						<a ng-click = "redirect(section.name, chapter.id, chapter.name, section.course, chapter.date)" >Chapter {{chapter.id}} - {{chapter.name}}</a>
+					</article>
+				</div>
+
+			</div>
+
+		</div>
+
+</div>

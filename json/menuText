@@ -1,0 +1,14 @@
+[
+ {
+ 	"tip" : "a ~ b selects any b after a"
+ },
+ {
+ 	"tip" : "a ~ b selects afsadny b after a"
+ },
+ {
+ 	"tip" : "a ~ b selects afffny b after a"
+ },
+ {
+ 	"tip" : "a ~ b selects fff b after a"
+ }
+]
