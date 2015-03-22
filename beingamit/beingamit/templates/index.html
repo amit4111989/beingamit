@@ -1,0 +1,120 @@
+<html ng-app = 'portfolio'>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/main.css"> 
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/slideMenu.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+	<title> Amit Juneja - Front-End Engineer and Designer in making </title>
+	<script src= "{{STATIC_URL}}js/jquery-1.8.0.min.js"></script>
+	<script src= "{{STATIC_URL}}js/jquery.easing.1.3.js"></script>
+	<script src = "{{STATIC_URL}}angular/angular.js"></script>
+	<script src= "{{STATIC_URL}}js/app.js"></script>
+	<script src= "{{STATIC_URL}}js/controller.js"></script>
+
+</head>
+<body ng-controller = "main">
+	<div id="modal-background"></div>
+	<div id="about-background">
+		<div id="about_back"></div>
+	</div>
+	<div id="contentWrapper"> 
+		<div id="coffeeMug"></div>
+		<div id="frame">
+			<div id="profilePic"></div>
+			<svg id="name">
+				<text x="-50" y="150" transform = "rotate(-40 0 0)">Amit Juneja</text>
+			</svg>
+			<div id="homeText"> Front-End Engineer and a Designer in making</div>
+		</div>
+
+		<div id="viewport"></div>
+
+		<nav class="menuBar">
+			<a class="option include css" ng-mouseover = "hoverFunction('css')" href="#/menu" ng-click="menuClk('CSS')"> 
+				<svg id="bookCss">
+  					<rect x="0" y="0" rx="35" ry="20" width="60" height="165" transform="rotate(-10 57 0)" id="css" class=""/>
+				</svg>
+				<svg id="cssText">
+					<text x="4" y="1" transform = "rotate(78 0 0)" class="cssText">CSS</text>
+				</svg>
+			</a>
+			<a class="option cssMenu include html" ng-mouseover = "hoverFunction('html')" href="#/menu" ng-click="menuClk('HTML')">
+				<svg id="bookHtml">
+  					<rect x="4" y="0" rx="35" ry="20" width="58" height="165" transform="rotate(-20 52 25)" id="html"/>
+  				</svg>
+  				<svg id="htmlText" >
+					<text x="8" y="0" transform = "rotate(71 0 0)" class="cssText">HTML</text>
+				</svg>
+			
+			</a>
+			<a class="option include js" href="#/menu" ng-mouseover = "hoverFunction('js')" ng-click="menuClk('Javascript')">
+				<svg id="bookJs">
+  					<rect x="0" y="0" rx="35" ry="20" width="60" height="165" transform = "rotate(-50 54 25)" id="js"/>
+				</svg>
+				<svg id="jsText">
+					<text x="33" y="0" transform = "rotate(40 0 0)" class="cssText">Articles</text>
+				</svg>
+			</a>
+			<a class="option aboutMoi" href="#/menu" id ="about">
+				<svg id="bookAboutMe">
+  					<rect x="0" y="0" rx="35" ry="20" width="60" height="150" transform = "rotate(-90 52 25)" id="aboutMe"/>
+				</svg>
+				<svg id="aboutMeText">
+					<text x="0" y="20" transform = "rotate(0 0 0)" class="cssText">About Me</text>
+				</svg>
+			</a>
+			<a class="option include d3" href="#/menu" ng-mouseover = "hoverFunction('d3')" ng-click="menuClk('Data Visualization')">
+				<svg id="bookD3">
+  					<rect x="0" y="-23" rx="35" ry="20" width="60" height="165" transform="rotate(-81 52 25)" id="d3"/>
+				</svg>
+				<svg id="d3Text">
+					<text x="4" y="20" transform = "rotate(8 0 0)" class="cssText">Work Experiences</text>
+				</svg>
+			</a>
+		</nav>
+
+		<div id="paper">
+				<img src="{{STATIC_URL}}img/pin.png" width='50' height='63'>
+				<div id="twitterWrapper">
+					<span>Attention Please!</span>
+					<a class="twitter-timeline" href="https://twitter.com/theBoyWhoDid" data-widget-id="362511691717672961" width= "300" height="300" data-chrome = "transparent noborders noscrollbar noheader">Tweets by @theBoyWhoDid</a>
+				</div>
+				<div id="cloudWrapper">
+				<img src="{{STATIC_URL}}img/cloud2.png">
+				<div id="cloudText"> 
+					<article>
+						<article>{{menuHover_text}}</article>
+						<article id="tip">{{menuHover_tip}}</article>
+					</article></div>
+					<!-- 	<article id="menuText">
+						</article> -->
+			</div>
+		</div>
+
+		<div id="bookShadow">
+		</div>
+ 
+		<div id="slideMenu">
+			<div ng-view>
+				
+			</div>
+		</div>
+
+	</div>
+	<div id="footerWrapper">
+
+		<div id="socialMediaWrapper">
+			<div id="iconFacebook"></div>
+			<div id="iconTwitter"></div>
+			<div id="iconLinkedin"></div>
+			<div id="iconRss"></div>
+			<div id="iconGmail"></div>
+		</div>
+	</div>
+	<!--<script type="text/javascript" src="{{STATIC_URL}}js/smoke.js"></script>-->
+    <script type="text/javascript" src="{{STATIC_URL}}js/main.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/menu_manipulation.js"></script>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+</body>
+</html>
