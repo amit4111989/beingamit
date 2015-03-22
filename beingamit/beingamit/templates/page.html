@@ -2,8 +2,45 @@
 <head>
 	<title>Page</title>
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/page.css">
+	 <link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+	 {%block extra_css%}
+	{%endblock extra_css%}
+	<script src= "{{STATIC_URL}}js/jquery-1.8.0.min.js"></script>
+	<script src= "{{STATIC_URL}}js/jquery.easing.1.3.js"></script>
 </head>
 <body>
-
+	<div id="page_body_wrapper">
+		<div id="page_menu_wrapper">
+			<svg id="name">
+				<text x="-20" y="140" transform = "rotate(-10 0 0)" fill='red'>Beingamit</text>
+			</svg>
+			<div class="page_menu" id="resume"><img src="{{STATIC_URL}}img/sticky11.png" width='180' height='90'> <span>Resume</span></div>
+			<div class="page_menu" id="projects"><img src="{{STATIC_URL}}img/sticky12.png" width='180' height='90'> <span>Projects</span></div>
+			<div class="page_menu" id="articles"><img src="{{STATIC_URL}}img/sticky13.png" width='180' height='90'><span>Activities</span></div>
+			<div class="page_menu" id="extracurricular"><img src="{{STATIC_URL}}img/sticky14.png" width='180' height='90'> <span>Extracurricular</span></div>
+		</div>
+		<div id="page_content_wrapper">
+			<div id="sidebar">
+				{%block menu%}
+				{%endblock menu%}
+			</div>
+			<div id="contentbar">
+				{%block content%}
+				{%endblock content%}
+			</div>
+			
+		</div>
+		<div id="footerWrapper">
+			<div id="socialMediaWrapper">
+				<div id="iconFacebook"></div>
+				<div id="iconTwitter"></div>
+				<div id="iconLinkedin"></div>
+				<div id="iconRss"></div>
+				<div id="iconGmail"></div>
+			</div>
+		</div>
+	</div>
+	{%block extra_scripts%}
+	{%endblock extra_scripts%}
 </body>
 </html>
