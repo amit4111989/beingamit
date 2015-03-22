@@ -165,7 +165,7 @@ body {
 
 #cloudText article {
 	height: 10px;
-	padding: 20px;
+	padding: 33px;
 	}
 
 #paper {
@@ -196,7 +196,7 @@ body {
 
 #tip {
 	width: 278px;
-	margin-left: 70px;
+	margin-left: 35px;
 	font-size: 15px;
 	font-family: Century Gothic, sans-serif;
 	color: black;
@@ -301,24 +301,24 @@ body {
 
 #cssText {
 	position: absolute;
-    font-family: 'Muli', sans-serif;
-	font-size: 39px;
-	fill: #E299AE;
-	top: 121px;
-	left: 25px;
-	width: 41px;
-	height: 76px;
+	  font-family: 'Muli', sans-serif;
+	  font-size: 31px;
+	  fill: #E299AE;
+	  top: 98px;
+	  left: 20px;
+	  width: 51px;
+	  height: 125px;
 	}
 
 #htmlText {
-	position: absolute;
-    font-family: 'Muli', sans-serif;
-	font-size: 39px;
-	fill: #E4A890;
-	top: 103px;
-	left: 82px;
-	width: 60px;
-	height: 122px;
+	  position: absolute;
+	  font-family: 'Muli', sans-serif;
+	  font-size: 31px;
+	  fill: #E4A890;
+	  top: 100px;
+	  left: 84px;
+	  width: 60px;
+	  height: 122px;
 	}
 
 #jsText {
@@ -346,7 +346,7 @@ body {
 #d3Text {
 	position: absolute;
     font-family: 'Muli', sans-serif;
-	font-size: 16px;
+	font-size: 19px;
 	fill: #A1DE78;
 	top: 118px;
 	left: 243px;

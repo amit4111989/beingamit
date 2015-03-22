@@ -144,6 +144,16 @@ $('#about_back').click(function(){
 });
 
 
+// On hover text display
+
+$('.option').hover(function(){
+
+  var child = $(this).children()[0];
+  var text = $(child).attr('name')
+  $('#tip').text(text);
+});
+
+
 
 
 
