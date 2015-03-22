@@ -1,4 +1,4 @@
 # beingamit
-my personal wesbite + electronic resume (under construction)
+my personal wesbite + electronic resume (Coming Soon)
 
 http://beingamit.ga
