@@ -80,12 +80,9 @@ body {
 	transition: opacity 0.5s ease-in-out;
    -moz-transition: opacity 0.5s ease-in-out;
    -webkit-transition: opacity 0.5s ease-in-out;
-}
-
-.page_menu img:hover {
-	transition: opacity 1s ease-in-out;
-   -moz-transition: opacity 1s ease-in-out;
-   -webkit-transition: opacity 1s ease-in-out;
+   transition: margin-top 0.5s ease-in-out;
+   -moz-transition: margin-top 0.5s ease-in-out;
+   -webkit-transition: margin-top 0.5s ease-in-out;
 }
 
 #page_menu_wrapper #name {
