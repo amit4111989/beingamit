@@ -42,7 +42,7 @@ body {
 	width: 100%;
 	border-radius: 15px;
 	box-shadow: 1px 1px 8px 2px;
-	min-height: 700px;
+	height: 3000px;
 	background: url('/static/img/paper_texture.jpg') ;
 }
 
@@ -133,7 +133,6 @@ body {
 	width: 635px;
 	padding: 50px;
 	float: left;
-	overflow: auto;
 }
 
 
@@ -212,7 +211,7 @@ body {
 }
 
 #contentbar .content .right {
-	width: 150px;
+	width: 200px;
 	display: block;
 	text-align: right;
 	float:right;
@@ -231,7 +230,7 @@ body {
   margin-top: 20px;
   line-height: 25px;
   font-size: 14px;
-  color: #0C0EB5;
+  color: #141717;
 }
 
 #contentbar .content .highlight {
@@ -241,7 +240,7 @@ body {
   color: #32261F;
   text-align: center;
   padding: 5px;
-  background: #E8ADAD;
+  background: #DDDDDD;
   box-shadow: 1px 1px 4px 1px;
   border-radius: 5px;
 }
@@ -258,6 +257,52 @@ body {
 #contentbar .content .logo {
 	margin-right: 10px;
 	float: left;
+}
+
+#contentbar #sbits .head{
+	height: 60px;
+}
+
+
+#contentbar #icap .head{
+	height: 100px;
+}
+
+#contentbar .abl .head {
+	height: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#contentbar section.abl {
+	clear:both;
+	margin-bottom: 50px;
+}
+
+#contentbar .abl .skill_name {
+	width: 45%;
+	float: left;
+	min-height: 50px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+#contentbar .abl .skill_name .item, #contentbar .abl .level .rating {
+	clear:both;
+	display: block;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+#contentbar .abl .level .rating {
+	text-align: left;
+}
+
+#contentbar .abl .level {
+	width: 45%;
+	float: right;
+	min-height: 50px;
+	margin-top: 30px;
 }
 
 /* FOOTER */
