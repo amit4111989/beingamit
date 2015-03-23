@@ -42,8 +42,7 @@ body {
 	width: 100%;
 	border-radius: 15px;
 	box-shadow: 1px 1px 8px 2px;
-	height: 3000px;
-	background: url('/static/img/paper_texture.jpg') ;
+	height: 5000px;
 }
 
 /* MENUBAR */
@@ -98,6 +97,7 @@ body {
 	  width: 246px;
 	  left: 0px;
 	  color: red;
+	  cursor: pointer;
 	  bottom: 6px;
 
 }
@@ -114,6 +114,10 @@ body {
 	  font-size: 22px;
 }
 
+.clear {
+	display: block;
+	clear:both;
+}
 
 
 /* CONTENT LAYOUT */
@@ -166,6 +170,10 @@ body {
 	color:#7E5756 ;
 }
 
+.top_menu {
+	display: none;
+}
+
 
 /* CONTENT */
 
@@ -204,7 +212,7 @@ body {
 }
 
 #contentbar .content .left {
-	width: 150px;
+	width: 200px;
 	display: block;
 	text-align: left;
 	float:left;
@@ -259,13 +267,8 @@ body {
 	float: left;
 }
 
-#contentbar #sbits .head{
-	height: 60px;
-}
-
-
 #contentbar #icap .head{
-	height: 100px;
+	height: 60px;
 }
 
 #contentbar .abl .head {
@@ -296,7 +299,9 @@ body {
 
 #contentbar .abl .level .rating {
 	text-align: left;
+	margin-bottom: 24px;
 }
+
 
 #contentbar .abl .level {
 	width: 45%;

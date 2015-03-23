@@ -1,14 +1,17 @@
 {% extends "page.html" %}
 
-{%block menu%}
-	<div class="menu_item"> <span> Work Experience </span></div>
-	<div class="menu_item"> <span> Abilities </span></div>
-	<div class="menu_item"> <span> Education </span></div>
+{% block title %} Resume - Amit Juneja {% endblock %}
 
+{%block menu%}
+    <div class="menu_item top_menu" href="body"> <span> Top </span></div>
+	<div class="menu_item first" href="#work_ex"> <span> Work Experience </span></div>
+	<div class="menu_item" href="#abilities"> <span> Abilities </span></div>
+	<div class="menu_item" href="#education"> <span> Education </span></div>
 {%endblock%}
 
 {%block content%}
-	<div class="item_heading"> Work Experience </div>
+
+	<div class="item_heading" id="work_ex"> Work Experience </div>
 	<div class="line"></div> 
 	<div class="content"> 
 		<section class="exp" id="bcf">
@@ -49,7 +52,7 @@
 	<br>
 	<br>
 	<br>
-	<div class="item_heading"> Abilities </div>
+	<div class="item_heading" id="abilities"> Abilities </div>
 	<div class="line"></div> 
 	<div class="content"> 
 		<section class="abl" id="languages">
@@ -69,67 +72,31 @@
 		</div>
 		<div class="level">
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="3"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="3.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
-				<span class="fa fa-star-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="2.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="4"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
+				<input type="hidden" class="ratings" value="4"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="4"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
+				<input type="hidden" class="ratings" value="4.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
+				<input type="hidden" class="ratings" value="4.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="3"/>
 			</div>
 		</div>
 		</section>
@@ -152,77 +119,168 @@
 		</div>
 		<div class="level">
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="4"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="2.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
-				<span class="fa fa-star-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="3"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="4"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
+				<input type="hidden" class="ratings" value="2.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="2.5"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
+				<input type="hidden" class="ratings" value="2"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-half-o"> </span>
+				<input type="hidden" class="ratings" value="3"/>
 			</div>
 			<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
-				<span class="fa fa-star-o"> </span>
+				<input type="hidden" class="ratings" value="4.5"/>
 			</div>
-			<div>
-				<div class="rating">
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star"> </span>
-				<span class="fa fa-star-o"> </span>
-				<span class="fa fa-star-o"> </span>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
 			</div>
 		</div>
 		</section>
+
+		<section class="abl" id="spatial">
+		<div class="head">
+			<span> Spatial Technologies </span>
+		</div>
+		<div class="skill_name">
+			<span class="item">QGIS</span>
+			<span class="item">Geoserver</span>
+			<span class="item">Geonode</span>
+			<span class="item">Openlayers Suite</span>
+			<span class="item">Leaflet</span>
+			<span class="item">GDAL/OGR</span>
+			<span class="item">OGC Standards</span>
+			<span class="item">ESRI ArcGIS</span>
+			<span class="item">netCDF4</span>
+		</div>
+		<div class="level">
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="2.5"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="2.5"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="2"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="2.5"/>
+			</div>
+		</div>
+		</section>
+
+		<section class="abl" id="database">
+		<div class="head">
+			<span> Tools </span>
+		</div>
+		<div class="skill_name">
+			<span class="item">Microsoft Office</span>
+			<span class="item">Git</span>
+			<span class="item">JIRA</span>
+			<span class="item">Bitbucket</span>
+			<span class="item">Sublime Text 2</span>
+			<span class="item">Docker</span>
+			<span class="item">Adobe Photoshop</span>
+			<span class="item">GIMP</span>
+		</div>
+		<div class="level">
+			<div class="rating">
+				<input type="hidden" class="ratings" value="5"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="2.5"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+		</div>
+		</section>
+
+		<section class="abl" id="tools">
+		<div class="head">
+			<span> Tools </span>
+		</div>
+		<div class="skill_name">
+			<span class="item">Microsoft Office</span>
+			<span class="item">Git</span>
+			<span class="item">JIRA</span>
+			<span class="item">Bitbucket</span>
+			<span class="item">Sublime Text 2</span>
+			<span class="item">Docker</span>
+			<span class="item">Adobe Photoshop</span>
+			<span class="item">GIMP</span>
+		</div>
+		<div class="level">
+			<div class="rating">
+				<input type="hidden" class="ratings" value="5"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="3"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="2.5"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+			<div class="rating">
+				<input type="hidden" class="ratings" value="4"/>
+			</div>
+		</div>
+		</section>
+
+		
 	</div>
 {%endblock content%}

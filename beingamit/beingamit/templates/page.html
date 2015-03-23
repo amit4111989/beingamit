@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Page</title>
+	<title>{%block title%}{%endblock%}</title>
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/page.css">
 	 <link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
 	 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -20,6 +20,7 @@
 			<div class="page_menu" id="articles"><img src="{{STATIC_URL}}img/sticky13.png" width='180' height='90'><span>Articles</span></div>
 			<div class="page_menu" id="extracurricular"><img src="{{STATIC_URL}}img/sticky14.png" width='180' height='90'> <span>Extracurricular</span></div>
 		</div>
+		<div class="clear"></div>
 		<div id="page_content_wrapper">
 			<div id="sidebar">
 				{%block menu%}
@@ -42,6 +43,7 @@
 		</div>
 	</div>
 	{%block extra_scripts%}
+		<script type="text/javascript" src="{{STATIC_URL}}js/page.js"></script>
 	{%endblock extra_scripts%}
 </body>
 </html>
