@@ -36,21 +36,23 @@ body {
 	margin-top: 50px;
 }
 
-#page_menu_wrapper {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 90px;
-}
-
 #page_content_wrapper {
 	display: block;
 	opacity: 0.9;
 	width: 100%;
 	border-radius: 15px;
 	box-shadow: 1px 1px 8px 2px;
-	min-height: 500px;
+	min-height: 700px;
 	background: url('/static/img/paper_texture.jpg') ;
+}
+
+/* MENUBAR */
+
+#page_menu_wrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 90px;
 }
 
 .page_menu {
@@ -74,21 +76,24 @@ body {
 	margin-left: 200px;
 }
 
-.page_menu:hover {
-	opacity: 0.8;
-	margin-top: 10px;
-	transition: opacity 0.5s ease-in-out;
-   -moz-transition: opacity 0.5s ease-in-out;
-   -webkit-transition: opacity 0.5s ease-in-out;
-   transition: margin-top 0.5s ease-in-out;
-   -moz-transition: margin-top 0.5s ease-in-out;
-   -webkit-transition: margin-top 0.5s ease-in-out;
+.page_menu:hover  {
+	box-shadow: 1px -1px 6px 1px #0a0a0a;
+	transition: box-shadow 0.25s ease-in-out;
+   -moz-transition: box-shadow 0.25s ease-in-out;
+   -webkit-transition: box-shadow 0.25s ease-in-out;
+}
+
+.page_menu:hover span {
+	color: rgba(223, 239, 177, 0.5);
+	transition: color 0.5s ease-in-out;
+   -moz-transition: color 0.5s ease-in-out;
+   -webkit-transition: color 0.5s ease-in-out;
 }
 
 #page_menu_wrapper #name {
 	  font-family: Sweetly Broken, sans-serif;
 	  position: absolute;
-	  font-size: 74px;
+	  font-size: 66px;
 	  height: 164px;
 	  width: 246px;
 	  left: 0px;
@@ -109,19 +114,155 @@ body {
 	  font-size: 22px;
 }
 
+
+
+/* CONTENT LAYOUT */
+
 #page_content_wrapper #sidebar {
-	display: block;
-	height: 100%;
-	width: 203px;
-	float: left;
+	  display: block;
+	  height: 600px;
+	  width: 203px;
+	  padding-top: 50px;
+	  padding-bottom: 50px;
+	  float: left;
 }
 
 #page_content_wrapper #contentbar {
 	display: block;
-	height: 100%;
-	width: 735px;
+	height: 600px;
+	width: 635px;
+	padding: 50px;
+	float: left;
+	overflow: auto;
+}
+
+
+/* SIDEBAR */
+
+#sidebar .menu_item {
+  width: 100%;
+  height: 33px;
+  box-shadow: 1px 1px 4px 1px rgb(182, 108, 35);
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  color:#7E5756 ;
+}
+
+#sidebar .menu_item span {
+	position: relative;
+	top: 5px;
+} 
+
+#sidebar .menu_item:hover, #sidebar .menu_item:active {
+	background:#FFF8C4 ;
+	transition: background 0.25s ease-in-out;
+   -moz-transition: background 0.25s ease-in-out;
+   -webkit-transition: background 0.25s ease-in-out;
+}
+
+#sidebar .menu_item:hover span,#sidebar .menu_item:active span{
+	color:#7E5756 ;
+}
+
+
+/* CONTENT */
+
+
+#contentbar .item_heading {
+	color: #451A00;
+	font-size: 24px;
+	text-align: center;
+	margin: 0 auto;
+	height: 28px;
+	width:100%;
+}
+
+#contentbar .line {
+	height: 1px;
+	width: 80%;
+	margin: 0 auto;
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+#contentbar .content {
+	display: block;
+	width: 80%;
+	min-height: 100px;
+	margin: 0 auto;
+	color: #32261F;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+#contentbar .content .head {
+	padding: 10px;
+	height: 40px;
+	box-shadow: 1px 1px 4px 1px;
+  	border-radius: 5px;
+}
+
+#contentbar .content .left {
+	width: 150px;
+	display: block;
+	text-align: left;
+	float:left;
+}
+
+#contentbar .content .right {
+	width: 150px;
+	display: block;
+	text-align: right;
+	float:right;
+}
+
+#contentbar .content .center {
+	width: 150px;
+	display: block;
+	text-align: center;
+	float:left;
+}
+
+#contentbar .content .sub {
+  clear: both;
+  display: block;
+  margin-top: 20px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #0C0EB5;
+}
+
+#contentbar .content .highlight {
+  clear: both;
+  display: block;
+  margin-top: 20px;
+  color: #32261F;
+  text-align: center;
+  padding: 5px;
+  background: #E8ADAD;
+  box-shadow: 1px 1px 4px 1px;
+  border-radius: 5px;
+}
+
+#contentbar .content .bull {
+	margin-right: 5px;
+} 
+
+#contentbar .exp {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#contentbar .content .logo {
+	margin-right: 10px;
 	float: left;
 }
+
+/* FOOTER */
+
+
 
 #footerWrapper {
 	width: 100%;
@@ -129,7 +270,7 @@ body {
 	margin-top: 100px ;
 	display: block;
 	background: #726e6b;
-	}
+}
 
 #footerText {
 	color: #efe9e1;

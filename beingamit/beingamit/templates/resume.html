@@ -1,0 +1,37 @@
+{% extends "page.html" %}
+
+{%block menu%}
+	<div class="menu_item"> <span> Work Experience </span></div>
+	<div class="menu_item"> <span> Abilities </span></div>
+	<div class="menu_item"> <span> Education </span></div>
+
+{%endblock%}
+
+{%block content%}
+	<div class="item_heading"> Work Experience </div>
+	<div class="line"></div> 
+	<div class="content"> 
+		<section class="exp">
+		<div class="head">
+			<img src="{{STATIC_URL}}img/bcf_logo.png" width="25" height="25" class="logo">
+			<span class="left"><a href="http://bcf.arl.arizona.edu/" target="_blank">BioComputingFacility</a>, Tucson, AZ</span>
+			<span class="right">Feb 2014 - Present</span>
+		</div>
+		<div class="highlight"> Lead Student Developer / Graduate Assistant </div>
+		<div class="sub"> <img src="{{STATIC_URL}}img/bull.png" width="25" height="25" class="bull">Developed on open-source GIS applications to create Spatial Data Infrastructure </div>
+		<div class="sub"> <img src="{{STATIC_URL}}img/bull.png" width="25" height="25" class="bull">Customized an open source GIS web app, <a href="http://geonode.org/" target="_blank">Geonode </a> to integrate services from local cyberinfrastructure, <a href="http://www.iplantcollaborative.org/" target="_blank"> Iplant Collaborative </a></div>
+		<div class="sub"> <img src="{{STATIC_URL}}img/bull.png" width="25" height="25" class="bull">Customized an open source server, <a href="http://geoserver.org/" target="_blank">Geoserver</a>, to enhance spatial data handling and to include services from <a href="http://www.iplantcollaborative.org/" target="_blank"> Iplant Collaborative </a></div>
+		</section>
+		<section class="exp">
+		<div class="head">
+			<img src="{{STATIC_URL}}img/bcf_logo.png" width="25" height="25" class="logo">
+			<span class="left"><a href="http://bcf.arl.arizona.edu/" target="_blank">Sourcebits Technologies</a>, Bangalore, India</span>
+			<span class="right">Feb 2014 - Present</span>
+		</div>
+		<div class="highlight"> Lead Student Developer / Graduate Assistant </div>
+		<div class="sub"> <img src="{{STATIC_URL}}img/bull.png" width="25" height="25" class="bull">Developed on open-source GIS applications to create Spatial Data Infrastructure </div>
+		<div class="sub"> <img src="{{STATIC_URL}}img/bull.png" width="25" height="25" class="bull">Customized an open source GIS web app, <a href="http://geonode.org/" target="_blank">Geonode </a> to integrate services from local cyberinfrastructure, <a href="http://www.iplantcollaborative.org/" target="_blank"> Iplant Collaborative </a></div>
+		<div class="sub"> <img src="{{STATIC_URL}}img/bull.png" width="25" height="25" class="bull">Customized an open source server, <a href="http://geoserver.org/" target="_blank">Geoserver</a>, to enhance spatial data handling and to include services from <a href="http://www.iplantcollaborative.org/" target="_blank"> Iplant Collaborative </a></div>
+		</section>
+	</div>
+{%endblock content%}

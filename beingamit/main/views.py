@@ -9,3 +9,6 @@ def home(request):
 
 def page(request):
 	return render(request,'page.html')
+
+def resume(request):
+	return render(request,'resume.html')
