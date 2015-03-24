@@ -64,6 +64,10 @@ body {
 	height: 90px;
 }
 
+#page_menu_wrapper a {
+	text-decoration: none;
+}
+
 .page_menu {
 	font-family: Century Gothic, sans-serif;
 	position: relative;
@@ -372,7 +376,7 @@ body {
 #socialMediaWrapper {
 	position: relative;
 	top: 26px;
-	width: 350px;
+	width: 150px;
 	margin: 0 auto;
 	}
 

@@ -15,13 +15,15 @@
 	{%endif%}
 	<div id="page_body_wrapper">
 		<div id="page_menu_wrapper">
-			<svg id="name">
-				<text x="-20" y="140" transform = "rotate(-10 0 0)" fill='red'>BeingAmit</text>
-			</svg>
-			<div class="page_menu" id="resume"><img src="{{STATIC_URL}}img/sticky11.png" width='180' height='90'> <span>Resume</span></div>
-			<div class="page_menu" id="projects"><img src="{{STATIC_URL}}img/sticky12.png" width='180' height='90'> <span>Projects</span></div>
-			<div class="page_menu" id="articles"><img src="{{STATIC_URL}}img/sticky13.png" width='180' height='90'><span>Articles</span></div>
-			<div class="page_menu" id="extracurricular"><img src="{{STATIC_URL}}img/sticky14.png" width='180' height='90'> <span>Extracurricular</span></div>
+			<a href="/">
+				<svg id="name">
+					<text x="-20" y="140" transform = "rotate(-10 0 0)" fill='red'>BeingAmit</text>
+				</svg>
+			</a>
+			<a class="page_menu" id="resume" href="/resume"><img src="{{STATIC_URL}}img/sticky11.png" width='180' height='90'> <span>Resume</span></a>
+			<a class="page_menu" id="projects"  href="/projects"><img src="{{STATIC_URL}}img/sticky12.png" width='180' height='90'> <span>Projects</span></a>
+			<a class="page_menu" id="articles"  href="/articles"><img src="{{STATIC_URL}}img/sticky13.png" width='180' height='90'><span>Articles</span></a>
+			<a class="page_menu" id="extracurricular"  href="/extra"><img src="{{STATIC_URL}}img/sticky14.png" width='180' height='90'> <span>Extracurricular</span></a>
 		</div>
 		<div class="clear"></div>
 		<div id="page_content_wrapper">
@@ -35,16 +37,15 @@
 			</div>
 			
 		</div>
-		<div id="footerWrapper">
+	</div>
+	<div id="footerWrapper">
 			<div id="socialMediaWrapper">
-				<div id="iconFacebook"></div>
-				<div id="iconTwitter"></div>
-				<div id="iconLinkedin"></div>
-				<div id="iconRss"></div>
-				<div id="iconGmail"></div>
+				<a id="iconTwitter" href="https://twitter.com/Jmit_Auneja" target="_blank"></a>
+				<a id="iconLinkedin" href="https://www.linkedin.com/in/amit4111989" target="_blank"></a>
+				<!--<div id="iconRss"></div>
+				<div id="iconGmail"></div>!-->
 			</div>
 		</div>
-	</div>
 	{%block extra_scripts%}
 		<script type="text/javascript" src="{{STATIC_URL}}js/page.js"></script>
 	{%endblock extra_scripts%}

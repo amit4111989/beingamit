@@ -1,6 +1,6 @@
-$('#page_menu_wrapper svg#name').on('click',function() {
-	window.location = 'http://localhost:8000'
-});
+// $('#page_menu_wrapper svg#name').on('click',function() {
+// 	window.location = 'http://localhost:8000'
+// });
 
 $('#sidebar .menu_item.first').css('background','#FFF8C4');
 
@@ -35,11 +35,16 @@ $(function() {
 
     $window.scroll(function() {
         if ($window.scrollTop() > offset.top) {
-        	  
-            $top.show();
-            $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding
-            });
+
+        	if ($window.scrollTop()>5000) {
+    			$top.show();
+    		}
+        	else {
+	            $top.show();
+	            $sidebar.stop().animate({
+	                marginTop: $window.scrollTop() - offset.top + topPadding
+	            });
+        	}
         } else {
         	
             $top.hide();
