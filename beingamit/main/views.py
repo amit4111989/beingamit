@@ -12,3 +12,15 @@ def page(request):
 
 def resume(request):
 	return render(request,'resume.html')
+
+def projects(request):
+	flash_notice = 'Projects page is not available at this time. Only Resume can be viewed'
+	return render(request,'resume.html', {'flash':flash_notice})
+
+def articles(request):
+	flash_notice = 'Articles page is not available at this time. Only Resume can be viewed'
+	return render(request,'resume.html',{'flash':flash_notice})
+
+def extra(request):
+	flash_notice = 'Extracurricular page is not available at this time. Only Resume can be viewed'
+	return render(request,'resume.html',{'flash':flash_notice})

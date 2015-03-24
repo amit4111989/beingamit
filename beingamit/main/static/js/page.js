@@ -4,11 +4,23 @@ $('#page_menu_wrapper svg#name').on('click',function() {
 
 $('#sidebar .menu_item.first').css('background','#FFF8C4');
 
+setTimeout(function(){$('#flash').hide()},5000);
+
 
 $('#sidebar .menu_item').on('click',function(){
 	$('#sidebar .menu_item').css('background','');
 	$(this).css('background','#FFF8C4');
+	$('.sub_menu_item').css('background','');
 });
+
+$('.sub_menu_item').on('click',function(){
+			$('.sub_menu_item').css('background','');
+			$(this).css('background','#F9E557');
+			$('#sidebar .menu_item').css('background','');
+			$('#sidebar .menu_item.abil').css('background','#FFF8C4');
+});
+
+
 
 // Fixed scroll
 
@@ -41,7 +53,7 @@ $(function() {
 
 // Jump to link
 
-$(".menu_item").on("click", function( e ) {
+$(".menu_item, .sub_menu_item").on("click", function( e ) {
 
         e.preventDefault();
 
@@ -50,6 +62,13 @@ $(".menu_item").on("click", function( e ) {
         }, 600);
 
     });
+
+// Sub categories for Abilities
+
+$(".menu_item.abil").on("click",function() {
+	$('.sub_menu_item').show();
+		
+});
 
 // function to assign ratings
 
