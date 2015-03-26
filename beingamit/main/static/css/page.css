@@ -7,7 +7,7 @@ src: url('/static/font/sweetly_broken/Sweetly Broken.ttf');
 @font-face
     {
     font-family: Century Gothic;
-    src: url('/static/font/gothic.ttf');
+    src: url('/static/font/gothic.TTF');
     }
 
 .menuBar .option {

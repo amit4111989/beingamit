@@ -7,8 +7,8 @@ var width = $(document).width(),
   cloud_text_click = false;
 
 			
-$('#modal-background').css('width', width + 'px')
-					  .css('height', height + 'px');
+// $('#modal-background').css('width', width + 'px')
+// 					  .css('height', height + 'px');
 
 $('#about-background').css('width', width + 'px')
             .css('height', height + 'px');
